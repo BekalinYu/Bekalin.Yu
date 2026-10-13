@@ -1,0 +1,6 @@
+{
+  "name": "Bekalin.yu - Bekal Hemat untuk Hari yang Padat",
+  "description": "Solusi meal-prep bernutrisi tinggi dan frozen food siap santap ramah kantong mahasiswa kos dan pekerja aktif dengan info QR gizi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

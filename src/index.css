@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --color-primary: #00442d;
+  --color-primary-container: #205c43;
+  --color-on-primary-container: #95d2b2;
+  --color-secondary: #2a6a48;
+  --color-secondary-container: #aceec4;
+  --color-on-secondary-container: #2f6e4c;
+  --color-surface: #ecfef1;
+  --color-surface-dim: #cdded2;
+  --color-surface-bright: #ecfef1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e6f8ec;
+  --color-surface-container: #e1f2e6;
+  --color-surface-container-high: #dbece0;
+  --color-surface-container-highest: #d5e7db;
+  --color-on-surface: #101f17;
+  --color-on-surface-variant: #404943;
+  --color-tertiary-fixed: #f8e0ad;
+  --color-on-tertiary-fixed: #251a00;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-outline: #707973;
+  --color-outline-variant: #c0c9c1;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #ecfef1;
+    color: #101f17;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Material Symbols styling */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Safe area paddings */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.animate-success-bounce {
+  animation: bounceSubtle 0.6s ease-out;
+}
